@@ -1,0 +1,661 @@
+@import url("./font.css");
+@import url("./reset.css");
+
+body {
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg-holder {
+  width: 100%;
+  height: 956px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../assets/images/woman-6882918\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.header {
+  width: 100%;
+}
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 186px;
+}
+.header__logo-link {
+  margin-right: 115px;
+}
+a {
+  color: #ffffff;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-right: auto;
+}
+.header__btn {
+  padding: 8px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 32px;
+  border: 1px solid #ffffff;
+  margin-right: 24px;
+}
+.header__number {
+  font-weight: 600;
+  font-size: 15px;
+}
+.promo-section {
+  width: 100%;
+}
+.promo-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.promo-section__heading {
+  width: 489px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 118%;
+  margin-bottom: 30px;
+}
+.promo-section__text {
+  width: 464px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 29px;
+}
+.promo-section__menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 200px;
+}
+.promo-section__btn {
+  color: #ffffff;
+  background-color: #e32966;
+  padding: 15px 27px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 32px;
+}
+.promo-section__btn-outline {
+  color: #ffffff;
+  padding: 15px 27px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 32px;
+  border: 1.5px solid #e32966;
+}
+.promo-section__socials-link {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.promo-section2 {
+  width: 100%;
+  margin-top: 120px;
+}
+.promo-section2 .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-section2__heading {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 62px;
+}
+.promo-section2__div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-section2__info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  height: 337px;
+  margin-top: 30px;
+}
+
+.promo-section3 {
+  width: 100%;
+  margin-top: 100px;
+}
+.promo-section3 .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-section3__heading {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+}
+.promo-section3__list {
+  display: flex;
+  align-items: center;
+  gap: 113px;
+  margin-top: 84px;
+}
+.promo-section3__list-li {
+  position: relative;
+  height: 435px;
+  width: 391px;
+  box-shadow: 0px 0px 10px 0px rgba(240, 239, 239, 0.5);
+  text-align: center;
+  background: radial-gradient(
+        72.11% 44.18% at 50% 94%,
+        rgb(164, 10, 121),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        45.61% 43.84% at 5% 4%,
+        rgb(0, 141, 243),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    radial-gradient(
+        65.76% 60.61% at 98% 1%,
+        rgb(220, 24, 200),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Предупреждение: градиент использует вращение, не поддерживаемое CSS, и может работать не так, как ожидается. */,
+    rgba(22, 43, 237, 0.5);
+
+  border-radius: 10px;
+}
+.promo-section3__list-li::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.promo-section3__img {
+  position: relative;
+  z-index: 2;
+}
+.promo-section3__li-heading {
+  position: relative;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 2;
+}
+.promo-section3__text {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.24px;
+  margin-bottom: 40px;
+  z-index: 2;
+}
+.promo-section3__li-btn {
+  position: relative;
+  background-color: #e32966;
+  padding: 12px 25px;
+  border-radius: 32px;
+  border: 1px solid #e32966;
+  z-index: 2;
+}
+.promo-section4 {
+  width: 100%;
+  margin-top: 100px;
+}
+.promo-section4__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.promo-section4 .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-section4__heading {
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 70px;
+}
+.promo-section4__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.promo-section4__btn {
+  background: none;
+  background-image: url("../assets/images/Arrow\ 2.svg");
+  padding-right: 32px;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+}
+.promo-section4__btn-active {
+  background: none;
+  background-image: url("../assets/images/Arrow\ 1.svg");
+  padding-right: 32px;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-weight: 400;
+  font-size: 24px;
+  color: #e32966;
+  border: none;
+}
+.swiper {
+  width: 100%;
+  max-width: 1040px;
+}
+.promo-section4__img-swiper {
+  height: 484px;
+  width: 336px;
+  object-fit: cover;
+}
+.swiper-button-prev {
+  color: #e32966;
+}
+.swiper-button-next {
+  color: #e32966;
+}
+.promo-section5 {
+  width: 100%;
+  margin-top: 100px;
+}
+.promo-section5 .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-section5__heading {
+  font-weight: 400;
+  font-size: 40px;
+  font-family: "Dela Gothic One", sans-serif;
+  line-height: 47px;
+  margin-bottom: 70px;
+}
+.promo-section5__table {
+  display: table;
+  margin: auto;
+  width: 100%;
+  height: 550.61px;
+}
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 196, 196, 0.2);
+  height: 98px;
+  width: 100%;
+  margin: 3px;
+  transition: 0.5s;
+}
+.cell:hover {
+  filter: brightness(1.5);
+}
+.cell-head-1 {
+  background-image: url("../assets/images/Rectangle\ 17.svg"),
+    url("../assets/images/Rectangle\ 16.svg");
+  /* background-size: 318px, 318px; */
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 132px;
+  width: 100%;
+  margin: 3px;
+}
+
+.cell-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 132px;
+  width: 100%;
+  margin: 3px;
+  background: rgb(25, 25, 27);
+}
+.cell-2 {
+  margin-top: auto;
+  margin-right: auto;
+  padding: 28px 21px;
+}
+.cell-1 {
+  margin-bottom: auto;
+  margin-left: auto;
+  padding: 28px 21px;
+}
+
+/* .table {
+  width: 100%;
+}
+.tr {
+}
+.td {
+  text-align: center;
+  padding-top: 40px;
+  width: 322px;
+  height: 98px;
+  background-color: rgba(196, 196, 196, 0.2);
+  border: 4px solid black;
+} */
+.promo-section5__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+.promo-section5__btn {
+  background: url("../assets/images/Arrow\ 7.svg"), rgb(227, 41, 102);
+  background-repeat: no-repeat;
+  background-position: right 55px center;
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px 95px 15px 55px;
+  box-shadow: 0px 9px 26px 0px rgba(227, 41, 102, 0.3);
+}
+.gallery {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.gallery .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.gallery-heading {
+  position: relative;
+  z-index: 2;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 118%;
+  margin-bottom: 70px;
+}
+.gallery-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.gallery-img {
+  position: relative;
+  z-index: 2;
+}
+.header__swiper-gallery {
+  box-shadow: -20px 8px 24px 0px rgba(52, 52, 52, 0.5);
+  position: relative;
+  z-index: 3;
+}
+
+.swiper-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 446px;
+}
+.swiper-wrapper {
+  position: relative;
+}
+.swiper-slide {
+  position: relative;
+}
+
+.gallery-card {
+  position: relative;
+  height: 530px;
+  width: 100%;
+  max-width: 447px;
+  padding: 73px 83px 171px 83px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Тень */
+  background: radial-gradient(
+        72.11% 44.18% at 50% 94%,
+        rgb(164, 10, 121),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        45.8% 43.84% at 5% 4%,
+        rgb(0, 141, 243),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        66.53% 60.61% at 98% 1%,
+        rgb(220, 24, 200),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    rgba(22, 43, 237, 0.5);
+}
+.gallery-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-card__text {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.gallery-swiper__navigation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.gallery-swiper__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+span {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 160%;
+}
+.gallery-swiper__btn-left {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+.gallery-swiper__btn-right {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.contacts {
+}
+.wrapper {
+}
+.left-info {
+  width: 272px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts__heading {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 118%;
+  margin-bottom: 40px;
+}
+.contacts__adress {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 118%;
+  margin-bottom: 24px;
+}
+.contacts__street {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 118%;
+  margin-bottom: 32px;
+}
+.contacts__number {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 118%;
+  margin-bottom: 32px;
+}
+.number {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  margin-bottom: 24px;
+}
+.contacts__socials {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 118%;
+  margin-bottom: 32px;
+}
+.contacts__img {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer {
+  width: 100%;
+  margin-top: 64px;
+  /* Тень */
+  box-shadow: 0px 8px 24px 0px rgba(129, 135, 189, 0.15);
+  background: radial-gradient(
+        73% 44.18% at 50% 94%,
+        rgb(164, 10, 121),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        64.01% 43.84% at 5% 4%,
+        rgb(0, 141, 243),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        107% 60.61% at 98% 1%,
+        rgb(220, 24, 200),
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    rgba(22, 43, 237, 0.5);
+
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.footer .wrapper {
+  width: 100%;
+  height: 110px;
+}
+.footer__head {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 160%;
+}
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.footer-nav-link {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+}
+.footer__confidentiality {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer__data-processing {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
